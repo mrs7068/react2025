@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import song1 from "./assets/loud-fanfare-trumpet-effect-04-412050.mp3";
+import song2 from "./assets/loud-fanfare-trumpet-effect-01-412045.mp3";
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [currentSong, setCurrentSong] = useState(null);
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    const playSong = (song) => {
+        if (currentSong) {
+            currentSong.pause();
+        }
+        const newSong = new Audio(song);
+        newSong.play();
+        setCurrentSong(newSong);
+    };
+
+    return (
+        <div style={{ textAlign: "center", marginTop: "50px" }}>
+            <h1>🎶 My Mini Sound Player 🎶</h1>
+            <button onClick={() => playSong(song1)}>Play Sound 1</button>
+            <button onClick={() => playSong(song2)}>Play Sound 2</button>
+        </div>
+    );
 }
 
-export default App
+export default App;
