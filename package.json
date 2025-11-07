@@ -2,12 +2,15 @@
   "name": "react2025",
   "private": true,
   "version": "0.1.0",
+  "homepage": "https://mrs7068.github.io/react2025",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.1.1",
