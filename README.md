@@ -1,16 +1,39 @@
-# React + Vite
+# Fun Music React Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A multi-page React application featuring an **audio player** and a **virtual piano**, built for fun and learning. Users can play songs, adjust volume, see a visualizer, and interact with a piano using their keyboard or mouse. 
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **Audio Player**
+  - Play, pause, and stop tracks
+  - Volume control with visual feedback
+  - Playlist with multiple songs
+  - Real-time visualizer with animated bars
+  - Responsive design for mobile and desktop
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Virtual Piano**
+  - Clickable piano keys
+  - Keyboard shortcuts mapped to piano notes
+  - Multiple octaves: A3 → G5
+  - White and black keys styled like a real piano
+  - Smooth key animations
 
-## Expanding the ESLint configuration
+- **Multi-Page Layout**
+  - Home page with navigation buttons
+  - Player page for audio
+  - Piano page for the virtual piano
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Global Footer**
+  - GitHub link
+  - AI Assisted badge
+  - CC BY 4.0 license attribution
+  - Sticks to bottom of the viewport
+
+---
+
+## Demo
+
+Live demo available at:  
+[https://mrs7068.github.io/react2025/](https://mrs7068.github.io/react2025/)
