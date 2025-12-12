@@ -27,7 +27,7 @@ A multi-page React application featuring an **audio player** and a **virtual pia
 
 - **Global Footer**
   - GitHub link
-  - AI Assisted badge
+  - AI Assisted badge _(AI was used to help understand the file structure and component interactions of a multi-page React site, as well as to keep code clean and organized)_
   - CC BY 4.0 license attribution
   - Sticks to bottom of the viewport
 
