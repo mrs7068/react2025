@@ -87,7 +87,7 @@ export default function Piano() {
         <div className="app-container">
             <div className="player-box">
                 <h1>🎹 My Mini Virtual Piano 🎹</h1>
-                <p>Click the keys or use your keyboard!</p>
+                <p>Click the keys or use your computer's keyboard!</p>
                 <div className="piano">
                     {keyOrder.map((key) => (
                         <button
